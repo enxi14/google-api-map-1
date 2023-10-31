@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Google Map api</title>
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaLKn_2FTE8KoXIV1-jLNisSMz0y8Ifpg&callback=initMap">
-</script>
-</head>
-<body>
-<div id="map" style="width: 100%; height: 400px;"></div>
 
-<script src="script.js"></script>
+<head>
+    <title>Google Map API</title>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaLKn_2FTE8KoXIV1-jLNisSMz0y8Ifpg&callback=initMap"></script>
+</head>
+
+<body>
+    <div id="map" style="width: 100%; height: 400px;"></div>
+    <div id="zoom-controls">
+        <button onclick="zoomIn()">Zoom In</button>
+        <button onclick="zoomOut()">Zoom Out</button>
+    </div>
 </body>
 </html>
