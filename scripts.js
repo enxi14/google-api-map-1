@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react';
 
 const Map = () => {
-  let map;
+let map;
 
-  const initMap = async () => {
+const initMap = async () => {
     const { Map, LatLngBounds } = await google.maps.importLibrary("maps");
 
     map = new Map(document.getElementById("map"), {
-      center: { lat: 35.6683179, lng: -80.4721204 },
-      zoom: 8,
+    center: { lat: 35.668289441226435, lng: -80.47211686172302 },
+    zoom: 8,
       zoomControl: true, // Enable zoom controls
     });
 
     // Create an array of marker positions (latitude and longitude)
     const markerPositions = [
-      { lat: 35.6683179, lng: -80.4721204 }, // Example marker 1
+      { lat: 35.668289441226435, lng: -80.47211686172302 }, // Example marker 1
       { lat: 35.7, lng: -80.5 }, // Example marker 2
       // Add more markers as needed
     ];
