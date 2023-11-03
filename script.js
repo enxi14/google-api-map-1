@@ -4,13 +4,13 @@ async function initMap() {
   const { Map, LatLngBounds } = await google.maps.importLibrary("maps");
 
   map = new Map(document.getElementById("map"), {
-    center: { lat: 35.6683179, lng: -80.4721204 },
+    center: { lat: 34.9678, lng: 135.7822 },
     // No zoom property to let it auto-adjust
   });
 
   // Create an array of marker positions (latitude and longitude)
   const markerPositions = [
-    { lat: 35.6683179, lng: -80.4721204 }, // Example marker 1
+    { lat: 34.9678, lng: 135.7822 }, // Example marker 1
     { lat: 35.7, lng: -80.5 }, // Example marker 2
     // Add more markers as needed
   ];
